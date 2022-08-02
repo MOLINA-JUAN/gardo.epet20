@@ -1,0 +1,12 @@
+.contanier-productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+.productos {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+.producto_precio {
+    font-weight: bold;
+}

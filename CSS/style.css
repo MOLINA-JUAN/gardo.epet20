@@ -1,0 +1,48 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+  }
+  a{
+    text-decoration: none;
+    color:black;
+  }
+  .titulo{
+    padding-left: 500px;
+  }
+  header{
+    display: flex;
+    height: 75px;
+    background-color: cadetblue;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+  }
+  .logo{
+    display: flex;
+    align-items: center;
+  }
+  .logo img{
+    height: 40px;
+    margin-right: 10px;
+  }
+  nav a{
+    font-weight: 600;
+    padding-right: 20px;
+  }
+  nav a:hover{
+    color: rgb(255, 255, 255);
+  }
+  .buscador{
+    padding-left: 550px;
+  }
+  footer{
+    display: flex;
+    background-color: aquamarine;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .titulodepie{
+   padding-left: 550px;
+  }
