@@ -6,3 +6,6 @@ let compraJ = "alimentoP";
 var precioA = 500;
 
     console.log(suma);
+    console.log(nombre);
+    console.log(compraJ);
+    console.log(precioA);
