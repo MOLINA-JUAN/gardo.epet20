@@ -37,14 +37,6 @@ nav a:hover{
 .buscador{
     padding-left: 550px;
 }
-  footer{
-    display: flex;
-    background-color: aquamarine;
-    margin: 0;
-    justify-content: space-between;
-    align-items: center;
-}
-
 a{
     text-decoration: none;
     color:black;
@@ -78,14 +70,12 @@ nav a:hover{
 .buscador{
     padding-left: 550px;
 }
-.titulodepie{
-    padding-left: 550px;
-   }footer{
-     background-color: cadetblue;
- }
- .box2{
-     padding-right: 500px;
- }
- .box3{
-     padding-left: 500px;
- }
+footer{
+    display: flex;
+    height: 100px;
+    background-color: cadetblue;
+}
+.box{
+
+}
+
