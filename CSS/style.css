@@ -34,7 +34,7 @@ nav a{
 nav a:hover{
     color: rgb(255, 255, 255);
 }
-  .buscador{
+.buscador{
     padding-left: 550px;
 }
   footer{
@@ -44,9 +44,7 @@ nav a:hover{
     justify-content: space-between;
     align-items: center;
 }
-  .titulodepie{
-   padding-left: 550px;
-  }
+
 a{
     text-decoration: none;
     color:black;
@@ -80,13 +78,14 @@ nav a:hover{
 .buscador{
     padding-left: 550px;
 }
-footer{
-    background-color: cadetblue;
-}
-.box2{
-    padding-right: 500px;
-}
-.box3{
-    padding-left: 500px;
-}
-
+.titulodepie{
+    padding-left: 550px;
+   }footer{
+     background-color: cadetblue;
+ }
+ .box2{
+     padding-right: 500px;
+ }
+ .box3{
+     padding-left: 500px;
+ }
