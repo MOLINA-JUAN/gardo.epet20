@@ -64,7 +64,7 @@ nav a{
     font-weight: 600;
     padding-right: 20px;
 }
-nav a:hover{
+a:hover{
     color: rgb(255, 255, 255);
 }
 .buscador{
@@ -76,6 +76,6 @@ footer{
     background-color: cadetblue;
 }
 .box{
-
+    
 }
 
