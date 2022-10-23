@@ -7,9 +7,6 @@ a{
     text-decoration: none;
     color:black;
 }
-.titulo{
-    padding-left: 500px;
-}
 header{
     display: flex;
     height: 75px;
@@ -31,7 +28,7 @@ nav a{
     font-weight: 600;
     padding-right: 20px;
 }
-nav a:hover{
+a:hover{
     color: rgb(255, 255, 255);
 }
 .buscador{
@@ -44,38 +41,26 @@ a{
 #titulo{
     padding-left: 500px;
 }
-header{
-    display: flex;
-  height: 75px;
-  background-color: cadetblue;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
-.logo{
-    display: flex;
-    align-items: center;
-}
-.logo img{
-    height: 40px;
-    margin-right: 10px;
-}
-nav a{
-    font-weight: 600;
-    padding-right: 20px;
-}
-a:hover{
-    color: rgb(255, 255, 255);
-}
-.buscador{
-    padding-left: 550px;
-}
 footer{
     display: flex;
     height: 100px;
     background-color: cadetblue;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
-.box{
+.piedepagina{
     
 }
+.box1{
+    justify-content: center;
+}
+.box3{    
+    padding-left: 20px;  
+}
+.redes{
+    padding-left: 500px;
+    height: 0;
+}
+
 
