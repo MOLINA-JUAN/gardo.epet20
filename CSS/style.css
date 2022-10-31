@@ -64,6 +64,9 @@ a{
 .item5{
     text-align: center;
 }
+.item6{
+    text-align: center;
+}
 footer{
     display: flex;
     height: 100px;
