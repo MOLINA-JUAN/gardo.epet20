@@ -43,6 +43,9 @@ a{
 }
 .productos{
     display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto ;
+    
 }
 .item1{
     text-align: center;
