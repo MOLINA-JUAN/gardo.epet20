@@ -1,7 +1,7 @@
 body{
     font-family: sans-serif;
     margin: 0;
-    background-color: rgb(169, 255, 226) ;
+    background-color: rgb(255, 255, 255) ;
 }
 a{
     text-decoration: none;
@@ -10,7 +10,7 @@ a{
 header{
     display: flex;
     height: 75px;
-    background-color: cadetblue;
+    background-color:rgb(243, 0, 0);
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -29,48 +29,62 @@ nav a{
     padding-right: 20px;
 }
 a:hover{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 .buscador{
     padding-left: 550px;
 }
 a{
     text-decoration: none;
-    color:black;
+    color:rgb(255, 255, 255);
+}
+.unico{
+    color: black;
 }
 #titulo{
     padding-left: 500px;
+}
+.destacados{
+    text-align: center;
 }
 .productos{
     display: grid;
     grid-template-columns: auto auto ;
     grid-template-rows: auto auto ;
-    grid-gap:20px;
-    grid-auto-columns: 500px;
+    grid-gap:10px;
+    grid-auto-columns: px;
     grid-auto-flow: column ;
 }
 .item1{
     text-align: center;
 }
+.item1:hover{
+    border: 1px solid black
+}
 .item2{
     text-align: center;
+    
 }
 .item3{
     text-align: center;
+    
 }
 .item4{
     text-align: center;
+    
 }
 .item5{
     text-align: center;
+   
 }
 .item6{
     text-align: center;
+    
 }
 footer{
     display: flex;
     height: 100px;
-    background-color: cadetblue;
+    background-color: rgb(243, 0, 0);
     justify-content: space-between;
     align-items: center;
     padding: 20px;
