@@ -41,6 +41,12 @@ a{
 #titulo{
     padding-left: 500px;
 }
+.productos{
+    display: grid;
+}
+.item1{
+    text-align: center;
+}
 footer{
     display: flex;
     height: 100px;
