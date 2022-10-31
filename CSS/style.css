@@ -55,7 +55,9 @@ a{
 .item2{
     text-align: center;
 }
-
+.item3{
+    text-align: center;
+}
 footer{
     display: flex;
     height: 100px;
