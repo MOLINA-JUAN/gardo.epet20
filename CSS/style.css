@@ -1,7 +1,9 @@
 body{
     font-family: sans-serif;
     margin: 0;
-<<<<<<< HEAD
+  }
+  article:hover{
+    color:peru;
   }
   a{
     text-decoration: none;
@@ -46,8 +48,6 @@ body{
   }
   .titulodepie{
    padding-left: 550px;
-  }
-=======
     background-color: aquamarine ;
 }
 a{
@@ -92,4 +92,3 @@ footer{
 .box3{
     padding-left: 500px;
 }
->>>>>>> 81a91499d88960c322639ea1f04045de2e555caa
