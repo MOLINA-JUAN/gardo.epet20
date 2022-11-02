@@ -54,6 +54,8 @@ a{
     grid-gap:10px;
     grid-auto-columns: px;
     grid-auto-flow: column ;
+    margin-left:150px;
+    margin-right:150px;
 }
 .item1{
     text-align: center;
