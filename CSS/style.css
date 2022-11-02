@@ -1,5 +1,5 @@
 body{
-    font-family: sans-serif;
+    font-family: arial black;
     margin: 0;
     background-color: rgb(255, 255, 255) ;
 }
@@ -30,6 +30,10 @@ nav a{
 }
 a:hover{
     color: rgb(0, 0, 0);
+}
+.menu{
+    width: 150px ;
+    background-color: aqua;
 }
 .buscador{
     padding-left: 550px;
