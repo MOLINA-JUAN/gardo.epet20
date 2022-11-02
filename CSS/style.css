@@ -64,11 +64,20 @@ a{
     margin-left:150px;
     margin-right:150px;
 }
+button{
+    font-family: arial black;    
+    background-color: red;
+}
+button:hover{
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
 .item1{
     text-align: center;
 }
 .item1:hover{
-    border: 1px solid black
+    border: 1px solid rgb(223, 223, 223);
+    background-color: rgb(224, 224, 224);
 }
 .item2{
     text-align: center;
