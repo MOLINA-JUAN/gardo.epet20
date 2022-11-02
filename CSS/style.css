@@ -31,10 +31,9 @@ nav a{
 a:hover{
     color: rgb(0, 0, 0);
 }
-.menu > {
-    width: 1000px ;
-    background-color: rgb(255, 0, 0);
+.menu > li{
     display: inline-block;
+    list-style: none;
 }
 .buscador{
     padding-left: 550px;
