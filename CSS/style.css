@@ -111,8 +111,18 @@ button:hover{
 .item5{
     text-align: center;
 }
+.item5:hover{
+    border: 1px solid rgb(223, 223, 223);
+    background-color: rgb(224, 224, 224);
+    border-radius: 3%;
+}
 .item6{
     text-align: center;
+}
+.item6:hover{
+    border: 1px solid rgb(223, 223, 223);
+    background-color: rgb(224, 224, 224);
+    border-radius: 3%;
 }
 footer{
     display: flex;
