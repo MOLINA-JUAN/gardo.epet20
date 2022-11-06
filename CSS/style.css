@@ -3,10 +3,6 @@ body{
     margin: 0;
     background-color: rgb(255, 255, 255) ;
 }
-a{
-    text-decoration: none;
-    color:black;
-}
 header{
     display: flex;
     height: 75px;
@@ -29,31 +25,36 @@ nav a{
     padding-right: 20px;
 }
 a:hover{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
-
 .menu{
+    display: flex;
     background-color: rgb(255, 0, 0);
-    width: 1302px;
     margin-bottom:100px;
     list-style: none;
     margin-top:-20px;
-   
+    justify-content:center;
+    padding: 10px;
+    height: 15px;
+    
 }
-.menu2 > li{
+/*.menu2 > li{
     display: inline-block;
-}
+}*/
 .buscador{
     padding-left: 535px;
     margin-top: -90px;
 }
 a{
     text-decoration: none;
-    color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
 }
 
 #titulo{
     padding-left: 500px;
+}
+.cambio a:hover{
+ color:black;   
 }
 .destacados{
     text-align: center;
