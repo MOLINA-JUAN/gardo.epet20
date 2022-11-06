@@ -93,6 +93,12 @@ button:hover{
 }
 .item3{
     text-align: center;
+    
+}
+.item3:hover{
+    border: 1px solid rgb(223, 223, 223);
+    background-color: rgb(224, 224, 224);
+    border-radius: 3%;
 }
 .item4{
     text-align: center;   
