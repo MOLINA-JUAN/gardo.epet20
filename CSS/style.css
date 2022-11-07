@@ -2,6 +2,7 @@ body{
     font-family: arial black;
     margin: 0;
     background-color: rgb(255, 255, 255) ;
+    
 }
 header{
     display: flex;
@@ -134,11 +135,17 @@ img{
 footer{
     display: flex;
     height: 100px;
-    background-color: rgb(243, 0, 0);
-    justify-content: space-between;
-    align-items: center;
     padding: 20px;
+    background-color: rgb(243, 0, 0);
+    
 }
 
+.grupo1 ul li{
+    list-style: none;
+    height: 20px;
+    float: left;
+    margin: 1px 1px;
+    padding: 1px;
+}
 
 
