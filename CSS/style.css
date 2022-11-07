@@ -56,6 +56,7 @@ a{
 .cambio a:hover{
  color:black;   
 }
+
 .destacados{
     text-align: center;
 }
@@ -138,18 +139,6 @@ footer{
     align-items: center;
     padding: 20px;
 }
-.box1{
-    justify-content: center;
-}
-.box3{    
-    padding-left: 50px;  
-}
-.box2{
-    padding-left: 500px;
-}
-.redes{
-    padding-left: 100px;
-    height: 0;
-}
+
 
 
