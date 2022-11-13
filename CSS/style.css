@@ -15,8 +15,8 @@
 }
 
 .contgrid > .producto{
-    width: 250%;
-    height: 500%;
+    width: 150%;
+    height: 250%;
     border: solid 2px #000;
     overflow: hidden;
     border-radius: 20px;
@@ -44,7 +44,14 @@
     justify-content: center;
 }
 
-.contgrid > .producto > .contenido > .p{
+.contgrid > .producto > .contenido > p{
     font-size: 18pt;
     
+}
+
+.contgrid > .producto > .contenido > button{
+    cursor: pointer;
+    padding: 5px;
+    background: none;
+    border: solid 2px rgb(53, 148, 140);
 }
