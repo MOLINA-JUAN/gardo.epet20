@@ -4,10 +4,10 @@
     -moz-box-sizing: border-box;
     margin: 0;
     padding: 0;
-
+    border: 10px;
 }
 
-.contgrid{
+.contrid{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -18,6 +18,33 @@
     width: 250%;
     height: 500%;
     border: solid 2px #000;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
+.contgrid > .producto > .imgcont{
+    position: relative;
+    width: 300%;
+    height: 200%;
+    overflow: hidden;
+    border-bottom: solid 2px #000;
+}
 
+.contgrid > .producto > .imgcont > .img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.contgrid > .contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contgrid > .producto > .contenido > .p{
+    font-size: 18pt;
+    
+}
