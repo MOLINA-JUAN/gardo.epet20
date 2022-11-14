@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="CSS/ingresarya.css">
 </head>
 <body>
-    <form action="index.html" name="enviame" id="supform">
+    <h1>GARDO.petshop</h1>
+    <form class="formulario" action="inicio.html.html" name="enviame" id="supform">
+        <label for="nombre1">ingresa a la pagina web de GARDO</label>
         <input type="text" placeholder="ingresa tu nombre" id="nombre" onclick="resetbtn()">
         <input type="password" placeholder="ingresa tu contraseña" id="contra" onclick="resetbtn()">
-        
         <input type="button" id="enviarlo" value="enviar" onmouseover="moveteporfa()">
     </form>
 
@@ -37,19 +39,20 @@
             }
             else{   return false;
             }
+        }
             function izquierda (){
             const button = document.getElementById('enviarlo');
-            button.style.transform='translatex(160%)';
+            button.style.transform='translatex(60%)';
             }
             function derecha (){
             const button = document.getElementById('enviarlo');
-            button.style.transform='translatex(0%)';
+            button.style.transform='translatex(-60%)';
         }
         function vuelve (){
             const button = document.getElementById('enviarlo');
-            button.style.transform='translatex(160%)';
+            button.style.transform='translatex(60%)';
         }
-        }
+        
     </script>
 </body>
 </html>
