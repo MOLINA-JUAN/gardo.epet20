@@ -43,7 +43,7 @@ a:hover{
     display: inline-block;
 }*/
 .rotacion{
-    
+    animation:  rotate 2s linear infinite;
 }
 .buscador{
     padding-left: 535px;
