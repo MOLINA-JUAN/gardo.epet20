@@ -19,6 +19,12 @@
         function moveteporfa(){
             const nombre =document.forms ['enviame']['nombre'].value;
             const contra =document.forms ['enviame']['contra'].value;
+
+            if((nombre == "" && contra == "" ) && posicion==0){
+                izquierda();
+                posicion=1; 
+                return false;
+            }
         }
     </script>
 </body>
