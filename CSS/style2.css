@@ -1,12 +1,12 @@
-.contanier-productos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+.rotacion {
+    animation:  rotate 2s linear infinite;
 }
-.productos {
-    border: 1px solid #ccc;
-    padding: 20px;
-}
-.producto_precio {
-    font-weight: bold;
+
+@keyframes rotate{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotateZ('3deg');
+    }
 }
