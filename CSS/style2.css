@@ -12,8 +12,8 @@
 }
 
 #capa{
-    -webkit-animation: infinite 5s normal linear infinite;
-    animation: infinite 5s normal linear infinite;
+    -webkit-animation: reverse 5s normal linear infinite;
+    animation: reverse 5s normal linear infinite;
     position: absolute;
     margin-top: 50px;
 }
