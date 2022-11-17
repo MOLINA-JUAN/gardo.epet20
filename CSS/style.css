@@ -28,6 +28,17 @@ nav a{
 a:hover{
   color: rgb(255, 255, 255);
 }
+.menu{
+  display: flex;
+  background-color: rgb(255, 0, 0);
+  margin-bottom:100px;
+  list-style: none;
+  margin-top:-20px;
+  justify-content:center;
+  padding: 10px;
+  height: 15px;
+  
+}
   article:hover{
     color:peru;
   }
