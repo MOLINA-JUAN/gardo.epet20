@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/ingresarya.css">
+</head>
+<body>
+    <div>
+    <h1><a href="inicio.html.html">GARDO.petshop</a></h1>
+    <form class="formulario" action="inicio.html.html" name="enviame" id="supform">
+        <label for="nombre1">ingresa a la pagina web de GARDO</label>
+        <input type="text" placeholder="ingresa tu nombre" id="nombre" onclick="resetbtn()">
+        <input type="password" placeholder="ingresa tu contraseña" id="contra" onclick="resetbtn()">
+        <input type="button" id="enviarlo" value="enviar" onmouseover="moveteporfa()">
+    </form>
+    </div>
+    <script>
+        var posicion =0;
+        function moveteporfa(){
+            const nombre =document.forms ['enviame']['nombre'].value;
+            const contra =document.forms ['enviame']['contra'].value;
+
+            if((nombre == "" && contra == "" ) && posicion==0){
+                izquierda();
+                posicion=1; 
+                return false;
+            }
+            if((nombre == "" && contra == "" ) && posicion==1){
+                derecha();
+                posicion=2; 
+                return false;
+            }
+            if((nombre == "" && contra == "" ) && posicion==2){
+                izquierda();
+                posicion=1; 
+                return false;
+            }
+            else{   return false;
+            }
+        }
+            function izquierda (){
+            const button = document.getElementById('enviarlo');
+            button.style.transform='translatex(60%)';
+            }
+            function derecha (){
+            const button = document.getElementById('enviarlo');
+            button.style.transform='translatex(-60%)';
+        }
+        function vuelve (){
+            const button = document.getElementById('enviarlo');
+            button.style.transform='translatex(0%)';
+        }
+        
+    </script>
+</body>
+</html>
