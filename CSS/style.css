@@ -21,7 +21,13 @@ header{
   height: 40px;
   margin-right: 10px;
 }
-
+nav a{
+  font-weight: 600;
+  padding-right: 20px;
+}
+a:hover{
+  color: rgb(255, 255, 255);
+}
   article:hover{
     color:peru;
   }
