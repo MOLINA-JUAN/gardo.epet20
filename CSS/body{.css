@@ -42,18 +42,6 @@ a:hover{
 /*.menu2 > li{
     display: inline-block;
 }*/
-.rotacion {
-    animation:  rotate 2s linear infinite;
-}
-
-@keyframes rotate{
-    0%{
-        transform: rotate(360deg);
-    }
-    100%{
-        transform: rotateZ('3deg');
-    }
-}
 .buscador{
     padding-left: 535px;
     margin-top: -90px;

@@ -2,7 +2,6 @@ body{
     font-family: arial black;
     margin: 0;
     background-color: rgb(255, 255, 255) ;
-    
 }
 header{
     display: flex;
@@ -42,18 +41,6 @@ a:hover{
 /*.menu2 > li{
     display: inline-block;
 }*/
-.rotacion {
-    animation:  rotate 2s linear infinite;
-}
-
-@keyframes rotate{
-    0%{
-        transform: rotate(360deg);
-    }
-    100%{
-        transform: rotateZ('3deg');
-    }
-}
 .buscador{
     padding-left: 535px;
     margin-top: -90px;
@@ -69,7 +56,6 @@ a{
 .cambio a:hover{
  color:black;   
 }
-
 .destacados{
     text-align: center;
 }
@@ -78,11 +64,10 @@ a{
     grid-template-columns: auto auto ;
     grid-template-rows: auto auto ;
     grid-gap:30px;
-        
+    grid-auto-columns: px;
     grid-auto-flow: column ;
     margin-left:150px;
     margin-right:150px;
-
 }
 button{
     font-family: arial black;    
@@ -148,31 +133,22 @@ img{
 footer{
     display: flex;
     height: 100px;
-    padding: 20px;
     background-color: rgb(243, 0, 0);
-    
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
-
-.grupo1 ul li{
-    list-style: none;
-    height: 20px;
-    float: left;
-    margin: 1px 1px;
-    padding: 1px;
+.box1{
+    justify-content: center;
 }
-.productosA{
-    display: grid;
-    grid-template-columns: 350px 350px 350px 350px 350px 350px 350px 350px ;
-    grid-template-rows: 350px 350px 350px 350px 350px 350px 350px 350px  ;
-    grid-gap:30px ;
-    grid-auto-columns: 500px;
-    grid-auto-flow: column ;
+.box3{    
+    padding-left: 50px;  
 }
-.productosA div{
-    background-color: rgb(255, 255, 255);
-    border: 10px solid black;
-    color: rgb(0, 0, 0);
-    text-align: center;
+.box2{
+    padding-left: 500px;
 }
-
+.redes{
+    padding-left: 100px;
+    height: 0;
+}
 
