@@ -8,4 +8,8 @@ a{
 .img-carrito{
     width: 200px;
     padding: 20px;
+    gap: 2rem;
+}
+.modal-content{
+    background-color: aquamarine;
 }

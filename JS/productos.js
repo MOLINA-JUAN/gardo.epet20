@@ -87,10 +87,15 @@ function agregarproducto(id){
         <p>Producto: ${nombre} </p>
         <p>Precio: ${precio} </p>
         <p>Cantidad: ${cantidad} </p>
-        <button class="btn btn-danger">Eliminar producto</button>
+        <button onclick"eliminarproducto(${id})" class="btn btn-danger">Eliminar producto</button>
         </div>
-
         <div>
         `
     }) 
+ }
+
+ function eliminarproducto(id){
+    const productoId = id
+    carrito = carrito.filter((producto)=> producto.Id !== productoId)
+    mostrarcarrito()
  }
