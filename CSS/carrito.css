@@ -1,3 +1,11 @@
 a{
     cursor: pointer;
 }
+.modal-contenedor{
+    display: flex;
+    align-items: center;
+}
+.img-carrito{
+    width: 200px;
+    padding: 20px;
+}
