@@ -15,4 +15,12 @@ const stockProductos = [
         precio: 2500,
         img: "IMAGENES/cucha-gatos.jfif",
     },
+    {
+        Id: 3,
+        nombre: "alimento para hamsters",
+        cantidad: 1,
+        desc: "para mantener bien sano a su hamster",
+        precio: 1500,
+        img: "IMAGENES/pienso-h.jpeg",
+    },
 ]
