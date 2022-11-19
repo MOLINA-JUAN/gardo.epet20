@@ -69,4 +69,28 @@ stockProductos.forEach((prod)=> {
 function agregarproducto(id){
     const item = stockProductos.find((prod)=> prod.id === id)
     carrito.push(item)
+    mostrarcarrito()
 }
+
+ const mostrarcarrito = () => {
+    const modalbody = document.querySelector('.modal.modalbody')
+    
+    modalbody.innerHTML= ''
+    carrito.forEach((prod)=> {
+        const {id, nombre, img, desc, cantidad, precio} = prod
+        modalbody.innerHTML += `
+        <div class="modal-contenedor" 
+        <div>
+        <img class="img-fluid img-carrito" src="${img}"/>
+        </div>
+        <div>
+        <p>Producto: ${nombre} </p>
+        <p>Precio: ${precio} </p>
+        <p>Cantidad: ${cantidad} </p>
+        <button class="btn btn-danger">Eliminar producto</button>
+        </div>
+
+        <div>
+        `
+    }) 
+ }
