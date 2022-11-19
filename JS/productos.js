@@ -23,4 +23,12 @@ const stockProductos = [
         precio: 1500,
         img: "IMAGENES/pienso-h.jpeg",
     },
+    {
+        Id: 4,
+        nombre: "alimento para perro",
+        cantidad: 1,
+        desc: "para mantener bien cuidado a su perro",
+        precio: 2500,
+        img: "IMAGENES/alimento-exlente.jpg",
+    },
 ]
