@@ -48,6 +48,8 @@ const stockProductos = [
         img: "IMAGENES/rueda-h.jfif",
     },
 ];
+let carrito = []
+
 const contenedor = document.querySelector('#contenedor')
 stockProductos.forEach((prod)=> {
     const {id, nombre, precio, desc, img, cantidad} = prod
@@ -63,3 +65,8 @@ stockProductos.forEach((prod)=> {
     </div>
     `
 })
+
+function agregarproducto(id){
+    const item = stockProductos.find((prod)=> prod.id === id)
+    carrito.push(item)
+}
