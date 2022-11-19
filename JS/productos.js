@@ -59,7 +59,7 @@ stockProductos.forEach((prod)=> {
     <p class="card_text">precio: ${precio} </p>
     <p class="card_text">descripcion: ${desc} </p>
     <p class="card_text">cantidad: ${cantidad} </p>
-    <a href="#" class="btn btn-primary"> Go somewhere</a>
+    <button onclick"agregarproducto(${id})" class="btn btn-primary">Agregar al carrito</button>
     </div>
     `
 })
