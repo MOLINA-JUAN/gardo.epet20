@@ -31,4 +31,13 @@ const stockProductos = [
         precio: 2500,
         img: "IMAGENES/alimento-exlente.jpg",
     },
+    {
+        Id: 5,
+        nombre: "rascador para gatos",
+        cantidad: 1,
+        desc: "para que su mascota se entretenga",
+        precio: 4000,
+        img: "IMAGENES/rascador-gatos.webp",
+    },
+    
 ]
