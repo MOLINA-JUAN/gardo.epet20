@@ -47,4 +47,19 @@ const stockProductos = [
         precio: 3200,
         img: "IMAGENES/rueda-h.jfif",
     },
-]
+];
+const contenedor = document.querySelector('#contenedor')
+stockProductos.forEach((prod)=> {
+    const {id, nombre, precio, desc, img, cantidad} = prod
+    contenedor.innerHTML += `
+    <div class="card" style="width: 18rem;">
+    <img class="car-img-top mt-2" src="${img}" alt="card image cap">
+    <div class="card-body">
+    <h5 class="card-title">${nombre}</h5>
+    <p class="card_text">precio: ${precio} </p>
+    <p class="card_text">descripcion: ${desc} </p>
+    <p class="card_text">cantidad: ${cantidad} </p>
+    <a href="#" class="btn btn-primary"> Go somewhere</a>
+    </div>
+    `
+})
