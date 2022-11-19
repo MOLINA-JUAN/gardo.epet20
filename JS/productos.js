@@ -39,5 +39,12 @@ const stockProductos = [
         precio: 4000,
         img: "IMAGENES/rascador-gatos.webp",
     },
-    
+    {
+        Id: 6,
+        nombre: "rueda para hamsters",
+        cantidad: 1,
+        desc: "para que su hamsters haga ejercicio y se divierta",
+        precio: 3200,
+        img: "IMAGENES/rueda-h.jfif",
+    },
 ]
