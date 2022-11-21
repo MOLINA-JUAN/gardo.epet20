@@ -61,15 +61,23 @@ const formulario = document.querySelector('#procesar-pago')
 
 if (activarFuncion) {
     activarFuncion.addEventListener("click", procesarPedido);
-  }
+}
 
 document.addEventListener('DOMContentLoaded', () =>{
     carrito = JSON.parse(localStorage.getItem('carrito')) || []
     mostrarcarrito()
     document.querySelector("#activarFuncion").click(procesarPedido);
 });
+
 if(formulario){
     formulario.addEventListener('submit', enviarCompra)
+}
+
+if (vaciarCarrito) {
+    vaciarCarrito.addEventListener("click", () => {
+      carrito.length = [];
+      mostrarCarrito();
+    });
   }
 
 stockProductos.forEach((prod)=> {
