@@ -92,10 +92,15 @@ function agregarproducto(id){
         <div>
         `
     }) 
+    guardarstorage()
  }
 
  function eliminarproducto(id){
     const productoId = id
     carrito = carrito.filter((producto)=> producto.Id !== productoId)
     mostrarcarrito()
+ }
+
+ function guardarstorage(){
+    localStorage.setItem("carrito", JSON.stringify(carrito))
  }
