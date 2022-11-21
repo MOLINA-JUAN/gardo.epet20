@@ -170,6 +170,10 @@ const stockProductos = [
       guardarStorage();
     }
 
+    function guardarstorage(){
+        localStorage.setItem("carrito", JSON.stringify(carrito))
+     }
+
     modalbody.innerHTML= ''
     carrito.forEach((prod)=> {
         const {id, nombre, img, desc, cantidad, precio} = prod
@@ -195,8 +199,4 @@ const stockProductos = [
     const productoId = id
     carrito = carrito.filter((producto)=> producto.Id !== productoId)
     mostrarcarrito()
- }
-
- function guardarstorage(){
-    localStorage.setItem("carrito", JSON.stringify(carrito))
  }
