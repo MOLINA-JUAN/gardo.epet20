@@ -78,6 +78,21 @@ if (vaciarCarrito) {
       carrito.length = [];
       mostrarCarrito();
     });
+}
+
+if (procesarCompra) {
+    procesarCompra.addEventListener("click", () => {
+      if (carrito.length === 0) {
+        Swal.fire({
+          title: "¡Tu carrito está vacio!",
+          text: "Compra algo para continuar con la compra",
+          icon: "error",
+          confirmButtonText: "Aceptar",
+        });
+      } else {
+        location.href = "compra.html";
+      }
+    });
   }
 
 stockProductos.forEach((prod)=> {
