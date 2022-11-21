@@ -107,8 +107,8 @@ stockProductos.forEach((prod)=> {
     <p class="card_text">cantidad: ${cantidad} </p>
     <button onclick"agregarproducto(${id})" class="btn btn-primary">Agregar al carrito</button>
     </div>
-    `
-})
+    `;
+});
 
 function agregarproducto(id){
     const item = stockProductos.find((prod)=> prod.id === id)
