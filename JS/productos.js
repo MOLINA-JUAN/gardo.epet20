@@ -68,6 +68,9 @@ document.addEventListener('DOMContentLoaded', () =>{
     mostrarcarrito()
     document.querySelector("#activarFuncion").click(procesarPedido);
 });
+if(formulario){
+    formulario.addEventListener('submit', enviarCompra)
+  }
 
 stockProductos.forEach((prod)=> {
     const {id, nombre, precio, desc, img, cantidad} = prod
