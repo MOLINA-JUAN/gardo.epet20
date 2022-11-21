@@ -59,6 +59,10 @@ const procesarCompra = document.querySelector("#procesarCompra");
 const totalProceso = document.querySelector("#totalProceso");
 const formulario = document.querySelector('#procesar-pago')
 
+if (activarFuncion) {
+    activarFuncion.addEventListener("click", procesarPedido);
+  }
+
 document.addEventListener('DOMContentLoaded', () =>{
     carrito = JSON.parse(localStorage.getItem('carrito')) || []
     mostrarcarrito()
