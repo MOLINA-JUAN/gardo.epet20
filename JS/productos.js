@@ -66,7 +66,8 @@ if (activarFuncion) {
 document.addEventListener('DOMContentLoaded', () =>{
     carrito = JSON.parse(localStorage.getItem('carrito')) || []
     mostrarcarrito()
-})
+    document.querySelector("#activarFuncion").click(procesarPedido);
+});
 
 stockProductos.forEach((prod)=> {
     const {id, nombre, precio, desc, img, cantidad} = prod
