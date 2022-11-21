@@ -51,6 +51,12 @@ const stockProductos = [
 let carrito = []
 
 const contenedor = document.querySelector('#contenedor')
+
+document.addEventListener('DOMContentLoaded', () =>{
+    carrito = JSON.parse(localStorage.getItem('carrito')) || []
+    mostrarcarrito()
+})
+
 stockProductos.forEach((prod)=> {
     const {id, nombre, precio, desc, img, cantidad} = prod
     contenedor.innerHTML += `
