@@ -50,8 +50,15 @@ const stockProductos = [
 ];
 let carrito = []
 
-const contenedor = document.querySelector('#contenedor')
-const carritoCont = document.querySelector('#carritoCont')
+const contenedor = document.querySelector('#contenedor');
+const carritoCont = document.querySelector('#carritoCont');
+const vaciarCarrito = document.querySelector("#vaciarCarrito");
+const precioTotal = document.querySelector("#precioTotal");
+const activarFuncion = document.querySelector("#activarFuncion");
+const procesarCompra = document.querySelector("#procesarCompra");
+const totalProceso = document.querySelector("#totalProceso");
+const formulario = document.querySelector('#procesar-pago')
+
 document.addEventListener('DOMContentLoaded', () =>{
     carrito = JSON.parse(localStorage.getItem('carrito')) || []
     mostrarcarrito()
@@ -98,6 +105,7 @@ function agregarproducto(id){
         <div>
         `
     }) 
+    carritoCont.textContent = carrito.length
     guardarstorage()
  }
 
