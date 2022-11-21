@@ -51,7 +51,7 @@ const stockProductos = [
 let carrito = []
 
 const contenedor = document.querySelector('#contenedor')
-
+const carritoCont = document.querySelector('#carritoCont')
 document.addEventListener('DOMContentLoaded', () =>{
     carrito = JSON.parse(localStorage.getItem('carrito')) || []
     mostrarcarrito()
