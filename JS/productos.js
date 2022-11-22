@@ -116,21 +116,21 @@ const stockProductos = [
      const existe = carrito.some(prod => prod.id === id)
   
         if(existe){
-      const prod = carrito.map(prod => {
+            const prod = carrito.map(prod => {
         if(prod.id === id){
           prod.cantidad++
         }
-        })
+            })
         } else {
-      const item = stockProductos.find((prod) => prod.id === id)
-      carrito.push(item)
+            const item = stockProductos.find((prod) => prod.id === id)
+            carrito.push(item)
         }
         mostrarCarrito()
-  
+
     };
 
     const mostrarcarrito = () => {
-     const modalbody = document.querySelector('.modal.modal-body')
+     const modalbody = document.querySelector('.modal.modalbody')
         if (modalBody) {
             modalBody.innerHTML = "";
             carrito.forEach((prod) => {
@@ -166,7 +166,8 @@ const stockProductos = [
         if (precioTotal) {
             precioTotal.innerText = carrito.reduce(
           (acc, prod) => acc + prod.cantidad * prod.precio,
-          0);
+          0
+          );
         }
     
       guardarStorage();
@@ -221,10 +222,6 @@ const stockProductos = [
         }else {
   
             const btn = document.getElementById('button');
-          
-          // document.getElementById('procesar-pago')
-          //  .addEventListener('submit', function(event) {
-          //    event.preventDefault();
           
              btn.value = 'Enviando...';
           
