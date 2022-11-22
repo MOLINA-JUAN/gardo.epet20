@@ -204,6 +204,12 @@ const stockProductos = [
           );
     }
 
+    function enviarCompra(e){
+        e.preventDefault()
+        const cliente = document.querySelector('#cliente').value
+        const email = document.querySelector('#correo').value
+    }   
+
     modalbody.innerHTML= ''
     carrito.forEach((prod)=> {
         const {id, nombre, img, desc, cantidad, precio} = prod
