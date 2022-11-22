@@ -171,8 +171,34 @@ const stockProductos = [
     }
 
     function guardarstorage(){
-        localStorage.setItem("carrito", JSON.stringify(carrito))
-     }
+        localStorage.setItem("carrito", JSON.stringify(carrito));
+    }
+
+    function eliminarproducto(id){
+        const productoId = id;
+        carrito = carrito.filter((producto)=> producto.Id !== productoId);
+        mostrarcarrito();
+    }
+
+    function procesarPedido() {
+        carrito.forEach((prod) => {
+          const listaCompra = document.querySelector("#lista-compra tbody");
+          const { id, nombre, precio, img, cantidad } = prod;
+          if (listaCompra) {
+            const row = document.createElement("tr");
+            row.innerHTML += `
+                    <td>
+                    <img class="img-fluid img-carrito" src="${img}"/>
+                    </td>
+                    <td>${nombre}</td>
+                  <td>${precio}</td>
+                  <td>${cantidad}</td>
+                  <td>${precio * cantidad}</td>
+                  `;
+            listaCompra.appendChild(row);
+          }
+        });
+    }
 
     modalbody.innerHTML= ''
     carrito.forEach((prod)=> {
@@ -193,10 +219,4 @@ const stockProductos = [
     }) 
     carritoCont.textContent = carrito.length
     guardarstorage()
- }
-
- function eliminarproducto(id){
-    const productoId = id
-    carrito = carrito.filter((producto)=> producto.Id !== productoId)
-    mostrarcarrito()
  }
