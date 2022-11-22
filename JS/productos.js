@@ -208,6 +208,15 @@ const stockProductos = [
         e.preventDefault()
         const cliente = document.querySelector('#cliente').value
         const email = document.querySelector('#correo').value
+
+        if(email === '' || cliente == ''){
+            Swal.fire({
+              title: "¡Debes completar tu email y nombre!",
+              text: "Rellena el formulario",
+              icon: "error",
+              confirmButtonText: "Aceptar",
+          })
+        }
     }   
 
     modalbody.innerHTML= ''
