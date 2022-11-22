@@ -14,6 +14,7 @@ body{
 .modal-contenedor{
     display: flex;
     align-items: center;
+    gap:2rem;
 }
 .img-carrito{
     width: 200px;
