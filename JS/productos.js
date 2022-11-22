@@ -241,6 +241,21 @@ const stockProductos = [
             const spinner = document.querySelector('#spinner')
             spinner.classList.add('d-flex')
             spinner.classList.remove('d-none')
+
+            setTimeout(() => {
+                spinner.classList.remove('d-flex')
+                spinner.classList.add('d-none')
+                formulario.reset()
+           
+                const alertExito = document.createElement('p')
+                alertExito.classList.add('alert', 'alerta', 'd-block', 'text-center', 'col-12', 'mt-2', 'alert-success')
+                alertExito.textContent = 'Compra realizada correctamente'
+                formulario.appendChild(alertExito)
+           
+                setTimeout(() => {
+                  alertExito.remove()
+                }, 3000)
+                }, 3000)
         }        
     }   
 
