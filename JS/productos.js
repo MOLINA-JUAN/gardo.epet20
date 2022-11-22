@@ -47,8 +47,16 @@ const stockProductos = [
         precio: 3200,
         img: "IMAGENES/rueda-h.jfif",
     },
+    {
+      Id: 7,
+      nombre: "cucha para perro",
+      cantidad: 1,
+      desc: "para que sus mascotas tengan donde dormir y no mojarse",
+      precio: 6100,
+      img: "IMAGENES/cuchas.perros.jpg",
+  },
 ];
- let carrito = []
+ let carrito = [];
 
     const contenedor = document.querySelector('#contenedor');
     const carritoCont = document.querySelector('#carritoCont');
@@ -57,7 +65,7 @@ const stockProductos = [
     const activarFuncion = document.querySelector("#activarFuncion");
     const procesarCompra = document.querySelector("#procesarCompra");
     const totalProceso = document.querySelector("#totalProceso");
-    const formulario = document.querySelector('#procesar-pago')
+    const formulario = document.querySelector('#procesar-pago');
 
     if (activarFuncion) {
     activarFuncion.addEventListener("click", procesarPedido);
@@ -65,7 +73,7 @@ const stockProductos = [
 
     document.addEventListener('DOMContentLoaded', () =>{
     carrito = JSON.parse(localStorage.getItem('carrito')) || []
-    mostrarcarrito()
+    mostrarcarrito();
     document.querySelector("#activarFuncion").click(procesarPedido);
     });
 
@@ -76,7 +84,7 @@ const stockProductos = [
     if (vaciarCarrito) {
     vaciarCarrito.addEventListener("click", () => {
       carrito.length = [];
-      mostrarCarrito();
+      mostrarcarrito();
     });
     }
 
@@ -113,30 +121,30 @@ const stockProductos = [
     });
 
     const agregarProducto = (id) => {
-     const existe = carrito.some(prod => prod.id === id)
+     const existe = carrito.some(prod => prod.id === id);
   
         if(existe){
             const prod = carrito.map(prod => {
         if(prod.id === id){
-          prod.cantidad++
+          prod.cantidad++;
         }
             })
         } else {
-            const item = stockProductos.find((prod) => prod.id === id)
-            carrito.push(item)
+            const item = stockProductos.find((prod) => prod.id === id);
+            carrito.push(item);
         }
-        mostrarCarrito()
+        mostrarcarrito();
 
     };
 
     const mostrarcarrito = () => {
-     const modalbody = document.querySelector('.modal.modalbody')
-        if (modalBody) {
-            modalBody.innerHTML = "";
+     const modalbody = document.querySelector('.modal.modal-body');
+        if (modalbody) {
+            modalbody.innerHTML = "";
             carrito.forEach((prod) => {
           const { id, nombre, precio, desc, img, cantidad } = prod;
-          console.log(modalBody);
-          modalBody.innerHTML += `
+          console.log(modalbody);
+          modalbody.innerHTML += `
           <div class="modal-contenedor">
             <div>
             <img class="img-fluid img-carrito" src="${img}"/>
@@ -153,27 +161,27 @@ const stockProductos = [
         }
     
     
-        if (carrito.length === 0) {
+      if (carrito.length === 0) {
             console.log("Nada");
-            modalBody.innerHTML = `
+            modalbody.innerHTML = `
             <p class="text-center text-primary parrafo">¡Aun no agregaste nada!</p>
             `;
-        } else {
+      } else {
         console.log("Algo");
       }
-        carritoContenedor.textContent = carrito.length;
+      carritoCont.textContent = carrito.length;
 
-        if (precioTotal) {
+      if (precioTotal) {
             precioTotal.innerText = carrito.reduce(
           (acc, prod) => acc + prod.cantidad * prod.precio,
           0
           );
-        }
+      }
     
       guardarStorage();
     }
 
-    function guardarstorage(){
+    function guardarStorage(){
         localStorage.setItem("carrito", JSON.stringify(carrito));
     }
 
@@ -209,8 +217,8 @@ const stockProductos = [
 
     function enviarCompra(e){
         e.preventDefault()
-        const cliente = document.querySelector('#cliente').value
-        const email = document.querySelector('#correo').value
+        const cliente = document.querySelector('#cliente').value;
+        const email = document.querySelector('#correo').value;
 
         if(email === '' || cliente == ''){
             Swal.fire({
@@ -237,24 +245,24 @@ const stockProductos = [
                 alert(JSON.stringify(err));
             });
 
-            const spinner = document.querySelector('#spinner')
-            spinner.classList.add('d-flex')
-            spinner.classList.remove('d-none')
+            const spinner = document.querySelector('#spinner');
+            spinner.classList.add('d-flex');
+            spinner.classList.remove('d-none');
 
             setTimeout(() => {
-                spinner.classList.remove('d-flex')
-                spinner.classList.add('d-none')
-                formulario.reset()
+                spinner.classList.remove('d-flex');
+                spinner.classList.add('d-none');
+                formulario.reset();
            
-                const alertExito = document.createElement('p')
-                alertExito.classList.add('alert', 'alerta', 'd-block', 'text-center', 'col-12', 'mt-2', 'alert-success')
-                alertExito.textContent = 'Compra realizada correctamente'
-                formulario.appendChild(alertExito)
+                const alertExito = document.createElement('p');
+                alertExito.classList.add('alert', 'alerta', 'd-block', 'text-center', 'col-12', 'mt-2', 'alert-success');
+                alertExito.textContent = 'Compra realizada correctamente';
+                formulario.appendChild(alertExito);
            
                 setTimeout(() => {
-                  alertExito.remove()
-                }, 3000)
-                }, 3000)
+                  alertExito.remove();
+                }, 3000);
+                }, 3000);
         }      
-        localStorage.clear()  
+        localStorage.clear();
     }   

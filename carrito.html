@@ -27,13 +27,15 @@
 <body>
     <header>
         <nav class="navbar navbar-ligth bg-dark min-vw-100">
-            <h1 class="p-3 text white">Carrrito</h1>
+            <h1 class="p-3 text-white">Carrrito</h1>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link text-white"
+                    <a 
+                    class="nav-link text-white"
                     data-bs-toggle="modal"
-                    data-bs-target="#modal">
-                    <i class="bi bi-car mx-5" id="carritoCont">0</i>
+                    data-bs-target="#modal"
+                    >
+                    <i class="bi bi-cart mx-5" id="carritoCont">0</i>
                     </a>
                 </li>
             </ul>
@@ -49,15 +51,30 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title">Carrito</h5>
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <button 
+                        type="button" 
+                        class="close" 
+                        data-bs-dismiss="modal" 
+                        aria-label="Close"
+                        >
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modalbody"></div>
+                    <div class="modal-body"></div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" id="vaciarcarrito">vaciar carrito</button>
-                        <button type="button" id="Porcesarcompra" class="btn btn-primary">continuar compra</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+                        <button type="button" class="btn btn-danger" id="vaciarcarrito">
+                            vaciar carrito
+                        </button>
+                        <button type="button" id="Porcesarcompra" class="btn btn-primary">
+                            continuar compra
+                        </button>
+                        <button 
+                         type="button" 
+                         class="btn btn-secondary" 
+                         data-bs-dismiss="modal"
+                        >
+                        cerrar
+                    </button>
                         <span>Precio total:</span>
                         <p class="text-center" id="preciototal"></p>
                     </div>
@@ -67,6 +84,5 @@
     </div>
     <script src="JS/productos.js"></script>
     <script src="JS/bootstrap.bundle.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
