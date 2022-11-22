@@ -237,6 +237,10 @@ const stockProductos = [
                 btn.value = 'Finalizar compra';
                 alert(JSON.stringify(err));
             });
+
+            const spinner = document.querySelector('#spinner')
+            spinner.classList.add('d-flex')
+            spinner.classList.remove('d-none')
         }        
     }   
 
