@@ -96,7 +96,8 @@ const stockProductos = [
     }
 
     stockProductos.forEach((prod)=> {
-    const {id, nombre, precio, desc, img, cantidad} = prod
+    const {id, nombre, precio, desc, img, cantidad} = prod;
+    if (contenedor) {
     contenedor.innerHTML += `
     <div class="card" style="width: 18rem;">
     <img class="car-img-top mt-2" src="${img}" alt="card image cap">
@@ -108,6 +109,7 @@ const stockProductos = [
     <button onclick"agregarproducto(${id})" class="btn btn-primary">Agregar al carrito</button>
     </div>
     `;
+    }
     });
 
     const agregarProducto = (id) => {
