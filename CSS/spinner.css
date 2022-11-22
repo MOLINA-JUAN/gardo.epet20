@@ -27,3 +27,7 @@ body{
     font-weight: 900;
     font-style: italic;
 }
+#precioTotal{
+    margin:0;
+    padding:0;
+}
