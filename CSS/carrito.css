@@ -4,6 +4,9 @@
 a{
     cursor: pointer;
 }
+.alerta{
+    font-weight:700;
+}
 .modal-contenedor{
     display: flex;
     align-items: center;
