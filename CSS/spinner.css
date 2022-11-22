@@ -11,3 +11,8 @@ body{
     background-color: #E3D8D6;
     overflow-x: hidden;
 }
+.modal-contenedor{
+    display:flex;
+    align-items: center;
+    gap:2rem;
+}
