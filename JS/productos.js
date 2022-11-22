@@ -256,7 +256,8 @@ const stockProductos = [
                   alertExito.remove()
                 }, 3000)
                 }, 3000)
-        }        
+        }      
+        localStorage.clear()  
     }   
 
     modalbody.innerHTML= ''
