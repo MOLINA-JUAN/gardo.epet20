@@ -216,7 +216,19 @@ const stockProductos = [
               icon: "error",
               confirmButtonText: "Aceptar",
           })
-        }
+        }else {
+  
+            const btn = document.getElementById('button');
+          
+          // document.getElementById('procesar-pago')
+          //  .addEventListener('submit', function(event) {
+          //    event.preventDefault();
+          
+             btn.value = 'Enviando...';
+          
+             const serviceID = 'default_service';
+             const templateID = 'template_qxwi0jn';
+        }        
     }   
 
     modalbody.innerHTML= ''
