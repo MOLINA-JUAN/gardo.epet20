@@ -23,3 +23,7 @@ body{
 .modal-content{
     background-color: aquamarine;
 }
+.parrafo{
+    font-weight: 900;
+    font-style: italic;
+}
