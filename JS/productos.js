@@ -130,8 +130,8 @@ const stockProductos = [
     const mostrarcarrito = () => {
      const modalbody = document.querySelector('.modal.modal-body')
         if (modalBody) {
-        modalBody.innerHTML = "";
-        carrito.forEach((prod) => {
+            modalBody.innerHTML = "";
+            carrito.forEach((prod) => {
           const { id, nombre, precio, desc, img, cantidad } = prod;
           console.log(modalBody);
           modalBody.innerHTML += `
@@ -147,25 +147,25 @@ const stockProductos = [
             </div>
           </div>
           `;
-        });
+            });
+        }
     
     
         if (carrito.length === 0) {
-        console.log("Nada");
-        modalBody.innerHTML = `
-        <p class="text-center text-primary parrafo">¡Aun no agregaste nada!</p>
-        `;
-      } else {
+            console.log("Nada");
+            modalBody.innerHTML = `
+            <p class="text-center text-primary parrafo">¡Aun no agregaste nada!</p>
+            `;
+        } else {
         console.log("Algo");
       }
-      carritoContenedor.textContent = carrito.length;
+        carritoContenedor.textContent = carrito.length;
 
-      if (precioTotal) {
-        precioTotal.innerText = carrito.reduce(
+        if (precioTotal) {
+            precioTotal.innerText = carrito.reduce(
           (acc, prod) => acc + prod.cantidad * prod.precio,
-          0
-        );
-      }
+          0);
+        }
     
       guardarStorage();
     }
@@ -259,24 +259,3 @@ const stockProductos = [
         }      
         localStorage.clear()  
     }   
-
-    modalbody.innerHTML= ''
-    carrito.forEach((prod)=> {
-        const {id, nombre, img, desc, cantidad, precio} = prod
-        modalbody.innerHTML += `
-        <div class="modal-contenedor" 
-        <div>
-        <img class="img-fluid img-carrito" src="${img}"/>
-        </div>
-        <div>
-        <p>Producto: ${nombre} </p>
-        <p>Precio: ${precio} </p>
-        <p>Cantidad: ${cantidad} </p>
-        <button onclick"eliminarproducto(${id})" class="btn btn-danger">Eliminar producto</button>
-        </div>
-        <div>
-        `
-    }) 
-    carritoCont.textContent = carrito.length
-    guardarstorage()
- }
