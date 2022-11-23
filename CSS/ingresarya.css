@@ -19,8 +19,14 @@ a:hover{
     color: white;
 }
 h1{
+<<<<<<< HEAD
     padding-bottom: 300px;
     margin-top: -100px;
+=======
+    
+    padding-bottom: 300px;
+    margin-top: -200px;
+>>>>>>> 8dfe69d73050e694385a7a178f8330bddae32c71
     font-family: arial;
     font-size: 80px;
     color: rgb(0, 0, 0);
@@ -62,3 +68,10 @@ h1{
     box-shadow: 1px 1px 2px #000;
     color: #fff;
 }
+<<<<<<< HEAD
+=======
+input:hover{
+     background-color: rgb(255, 255, 255);
+     cursor: pointer;
+}
+>>>>>>> 8dfe69d73050e694385a7a178f8330bddae32c71

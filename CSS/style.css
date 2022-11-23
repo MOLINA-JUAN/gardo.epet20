@@ -1,4 +1,5 @@
 body{
+<<<<<<< HEAD
     font-family: arial black;
     margin: 0;
     background-color: rgb(255, 255, 255) ;
@@ -38,11 +39,53 @@ a:hover{
     padding: 10px;
     height: 15px;
     
+=======
+  font-family: arial black;
+  margin: 0;
+  background-color: rgb(255, 255, 255) ;
+  
+}
+header{
+  display: flex;
+  height: 75px;
+  background-color:rgb(255, 0, 0);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+.logo img{
+  height: 40px;
+  margin-right: 10px;
+}
+nav a{
+  font-weight: 600;
+  padding-right: 20px;
+}
+a:hover{
+  color: rgb(255, 255, 255);
+}
+.menu{
+  display: flex;
+  background-color: rgb(255, 0, 0);
+  margin-bottom:100px;
+  list-style: none;
+  margin-top:-20px;
+  justify-content:center;
+  padding: 10px;
+  height: 15px;
+  
+>>>>>>> 8dfe69d73050e694385a7a178f8330bddae32c71
 }
 /*.menu2 > li{
     display: inline-block;
 }*/
 .rotacion {
+<<<<<<< HEAD
     animation:  rotate 2s linear infinite;
 }
 
@@ -176,3 +219,143 @@ footer{
 }
 
 
+=======
+  animation:  rotate 2s linear infinite;
+}
+@keyframes rotate{
+  0%{
+      transform: rotate(360deg);
+  }
+  100%{
+      transform: rotateZ('3deg');
+  }
+}
+.buscador{
+  /* padding-left: 535px;  */
+  /* margin-top: -90px;  */
+  position: relative;
+}
+a{
+  text-decoration: none;
+  color:rgb(0, 0, 0);
+}
+a:hover{
+  color: white;
+}
+
+.titulo:hover{
+  color:blue;
+}
+
+#titulo{
+  padding-left: 500px;
+}
+.cambio a:hover{
+color:black;   
+}
+
+.destacados{
+  text-align: center;
+}
+.productos{
+  display: grid;
+  grid-template-columns: auto auto ;
+  grid-template-rows: auto auto ;
+  grid-gap:30px;
+      
+  grid-auto-flow: column ;
+  margin-left:150px;
+  margin-right:150px;
+
+}
+button{
+  font-family: arial black;    
+  background-color: red;
+  border-radius: 10%;
+}
+button:hover{
+  color: rgb(255, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+img{
+  border-radius: 4%;
+}
+.item1{
+  text-align: center;
+}
+.item1:hover{
+  border: 1px solid rgb(223, 223, 223);
+  background-color: rgb(224, 224, 224);
+  border-radius: 3%;
+}
+.item2{
+  text-align: center;
+}
+.item2:hover{
+  border: 1px solid rgb(223, 223, 223);
+  background-color: rgb(224, 224, 224);
+  border-radius: 3%;
+}
+.item3{
+  text-align: center;
+  
+}
+.item3:hover{
+  border: 1px solid rgb(223, 223, 223);
+  background-color: rgb(224, 224, 224);
+  border-radius: 3%;
+}
+.item4{
+  text-align: center;   
+}
+.item4:hover{
+  border: 1px solid rgb(223, 223, 223);
+  background-color: rgb(224, 224, 224);
+  border-radius: 3%;
+}
+.item5{
+  text-align: center;
+}
+.item5:hover{
+  border: 1px solid rgb(223, 223, 223);
+  background-color: rgb(224, 224, 224);
+  border-radius: 3%;
+}
+.item6{
+  text-align: center;
+}
+.item6:hover{
+  border: 1px solid rgb(223, 223, 223);
+  background-color: rgb(224, 224, 224);
+  border-radius: 3%;
+}
+footer{
+  display: flex;
+  height: 100px;
+  padding: 20px;
+  background-color: rgb(243, 0, 0);
+  
+}
+
+.grupo1 ul li{
+  list-style: none;
+  height: 20px;
+  float: left;
+  margin: 1px 1px;
+  padding: 1px;
+}
+.productosA{
+  display: grid;
+  grid-template-columns: 350px 350px 350px 350px 350px 350px 350px 350px ;
+  grid-template-rows: 350px 350px 350px 350px 350px 350px 350px 350px  ;
+  grid-gap:30px ;
+  grid-auto-columns: 500px;
+  grid-auto-flow: column ;
+}
+.productosA div{
+  background-color: rgb(255, 255, 255);
+  border: 10px solid black;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+>>>>>>> 8dfe69d73050e694385a7a178f8330bddae32c71
